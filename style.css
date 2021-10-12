@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif;
+}
+.header2{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(50,50,50,0.7)),url(data/supportbg2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header3{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(50,50,50,0.7)),url(data/w1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header4{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(50,50,50,0.7)),url(data/w2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(50,50,50,0.7)),url(data/homepagebackground.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+div.nav{
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/*navigation effects, before n after*/
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+
+/*AboutPage*/
+.company-p-vid-a{
+    float: right; margin: 10px 130px 10px 10px;
+}
+.company-p-text-a p{
+    color: rgba(0, 0, 0, 0.7);
+    text-align: justify;
+    width: 700px;
+    margin: 10px 0px 50px 150px;
+    
+}
+.company-p-text-a h4{
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 160px;
+}
+
+.company-p-vid-b{
+    float: left; margin:  0px 10px 1px 120px;
+}
+.company-p-text-b p{
+    color: rgba(212, 212, 212, 0.7);
+    text-align: justify;
+    width: 700px;
+    margin-left: 1048px;
+}
+.company-p-text-b h4{
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 1057px;
+    color: rgba(212, 212, 212, 0.7);
+}
+
+
+
+
+
+.text-box{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+/*SupportPage*/
+
+.down{
+    top: 300px;
+}
+.text-box-3{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    font-size: 55px;
+}
+
+input[type=text]{
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    border: 2px solid #555;
+    display: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 8pxpx;
+    font-size: 17px;
+    height: 30px;
+    width: 300px;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus{
+    width: 50%;
+    border: 2px solid #555;
+    display: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 8pxpx;
+    font-size: 17px;
+}
+
+    
+/* ................form styling in progress............*/
+
+.client-forms{
+    margin-bottom: 50px;
+}
+.client-data-1{
+    margin-left: 0px;
+    margin-bottom: 20px;
+    width: 490px;
+    display: inline-flex;
+}
+.client-data-2{
+    margin-bottom: 0 ;
+}
+.client-data-3{
+    margin: 20px 0px 20px 0px;
+    width: 490px;
+    display: inline-block;
+}
+
+input[type=submit]{
+    padding: 5px 5px;
+
+}
+label{
+    padding-right: 20px;
+}
+/*custom button source:https://www.w3schools.com/css/css3_buttons.asp*/
+.button{
+    background-color: #000000; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/*adjusting to different device screen sizes
+Then make it open-closed ' source : javascript for toggle menu' */
+/*
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #8a8a8a;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+*/
+
+.about{
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+
+}
+.about h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(94, 0, 94);
+}
+p{
+    color: rgb(175, 143, 171);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    margin-top: 2%;
+}
+.pp{
+    margin-bottom: 50px;
+}
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.bubble-col{
+    flex-basis: 31%;
+    background: rgb(99, 89, 99);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+
+    /*hover effect*/
+    transition: 0.5s;
+}
+.bubble-col:hover{
+    box-shadow: 0 0 20px 0px rgba(29, 13, 28, 0.616);
+}
+
+h3{
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+.footer{
+    width: 100%;
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+.footer h4{
+    margin-bottom: 45px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.iconify-inline{
+    padding: 0px 60px;
+}   
+
+.credit p{
+    font-size: xx-small;
+    display: flex;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+/*
+
+.gender-box .img-box{
+    width: 500px;
+    min-height: 300px;
+    background: #fff;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-top: 12%;
+
+}
+*/
+
+.row2{
+    display: inline-flex;
+    margin-left: 620px;
+    margin-top: 210px;
+}
+.gender{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.gender img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(252, 252, 252, 0.842);
+}
+
+.layer h5{
+    width: 100%;
+    font-weight: 300;
+    color: transparent;
+    font-size: 30px;
+    left: 100%;
+    bottom: 0;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h5{
+    bottom: 49%;
+    color: black;
+    opacity: 1;
+}
+
+.meme{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 30%;
+}
